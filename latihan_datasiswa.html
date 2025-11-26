@@ -1,0 +1,78 @@
+<html>
+        <head><title>Latihan_Java_Uzi</title></head>
+        <body bgcolor="AEDEFC">
+            
+            <script languange="JavaScript" src="isilatihan.js"></script>
+
+            <script languange="JavaScript">
+                function tekan(){
+                    var bil = (document.fform.bilangan.value);
+                    var namastr = (document.fform.nama.value);
+                    var jeniskelstr = (document.fform.jeniskel.value);
+                    var agamastr = (document.fform.agama.value);
+                    var statusstr = "";
+                    if (form.kawin.checked == true) {
+                        statusstr = "kawin";
+                    } else {
+                        statusstr = "Belumkawin";
+                    }
+                    var jurusanstr = (document.fform.jurusan.value);
+                    var komentarstr = (document.fform.komentar.value);
+                    document.fform.Onama.value = namastr;
+                    document.fform.Ojeniskel.value = jeniskelstr;
+                    document.fform.Oagama.value = agamastr;
+                    document.fform.Ostatus.value = statusstr;
+                    document.fform.Ojurusan.value = jurusanstr;
+                    document.fform.Okomentar.value = komentarstr;
+                }
+            </script>
+            <form name="fform">
+                <pre>
+                    NISN                :<input type="text" size="10" name="bilangan">
+                    Nama                :<input type="text" size="15" name="nama">
+                    Jenis Kelamin       :<select name="jeniskel" size="1">
+                                    <option value="lakilaki">Laki-Laki</option>
+                                    <option value="perempuan">Perempuan</option>
+                                    </select>
+                    Agama               :<select name="agama" size="1">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        </select>
+                    Status              :<input type="radio" value="kawin" name="kawin">kawin
+                    Jurusan             :<select name="jurusan" size="1">
+                        <option value="RPL">RPL</option>
+                        <option value="OTKP">OTKP</option>
+                        <option value="FKK">FKK</option>
+                        <option value="AKL">AKL</option>
+                        </select>
+                    Komentar            :<textarea name="komentar" rows="5" cols="50"></textarea>
+                    <br>
+                                                                                                          <input type="button" value="kirim" onclick="tekan()"><input type="reset" value="ulang">
+
+                    </pre>
+                    <h3>Data Siswa SMK AL-GHIFARI BANYURESMI</h3>
+                    NISN                :<input type="text" size="10" name="bilangan">
+                    Nama                :<input type="text" size="15" name="Onama">
+                    Jenis Kelamin       :<select name="Ojeniskel" size="1">
+                                    <option value="lakilaki">Laki-Laki</option>
+                                    <option value="perempuan">Perempuan</option>
+                                    </select>
+                    Agama               :<select name="Oagama" size="1">
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                        </select>
+                    Status              :<input type="radio" value="kawin" name="Ostatus">kawin
+                    Jurusan             :<select name="Ojurusan" size="1">
+                        <option value="RPL">RPL</option>
+                        <option value="OTKP">OTKP</option>
+                        <option value="FKK">FKK</option>
+                        <option value="AKL">AKL</option>
+                        </select>
+                    Komentar            :<textarea name="Okomentar" rows="5" cols="50"></textarea>
+            </form>
+        </body>
+</html>
